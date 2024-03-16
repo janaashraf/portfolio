@@ -175,18 +175,9 @@
                  <img src="Screenshot (186).png" width="440px">
           </div>
         </div>
+        
         <div class="slide">
-          <div class="card">
-            <img src="calendar-event.png" alt="algorithms">
-            <div class="card-content">
-              <h3>Events' scheduler</h3>
-              
-            </div>
-       
-          </div>
-        </div>
-        <div class="slide">
-          <div class="card">
+          <div class="card "onclick="openOnPopup()">
             <img src="hired.png" alt="algorithms">
             <div class="card-content">
               <h3>Onboarding Tool</h3>
@@ -194,6 +185,35 @@
              
             </div>
       
+          </div>
+        </div>
+        <div class="popup" id="popupon">
+          <div class="popup-content">
+            <span class="close" onclick="closeOnPopup()">&times;</span>
+        <h1>Onboarding Tool</h1>
+            <p>• A system for new employees, helps them after the hiring process to get familiar with the company’s 
+              rules, resources and policy, also the system provides courses for each department in the company, and 
+              then it tests the employee’s progress and offers them a certificate, each new employee is assigned to a 
+              buddy to help him during the process
+              <br>
+              <br>• Used tools: Asp.net We Api for backend, angular for frontend and my SQL for database management 
+              with the agile framework for the project management using scrum.
+                  </p>
+                  <h3>Click on the images</h3>
+                  <div class="grid-container">
+                    <div class="grid-item"><img src="IMG-20240316-WA0065.jpg" alt="Photo 1"></div>
+                    <div class="grid-item"><img src="IMG-20240316-WA0067.jpg" alt="Photo 2"></div>
+                    <div class="grid-item"><img src="IMG-20240316-WA0068.jpg" alt="Photo 3"></div>
+                    <div class="grid-item"><img src="IMG-20240316-WA0069.jpg" alt="Photo 4"></div>
+                    <div class="grid-item"><img src="IMG-20240316-WA0070.jpg" alt="Photo 5"></div>
+                    <div class="grid-item"><img src="IMG-20240316-WA0071.jpg" alt="Photo 6"></div>
+                    <div class="grid-item"><img src="IMG-20240316-WA0072.jpg" alt="Photo 7"></div>
+                    <div class="grid-item"><img src="IMG-20240316-WA0073.jpg" alt="Photo 8"></div>
+                  </div>
+                  <div id="lightbox" class="lightbox">
+                    <span class="close-btn" onclick="closeLightbox()">&times;</span>
+                    <img id="lightbox-img" class="lightbox-img">
+                  </div>
           </div>
         </div>
         <div class="slide">
@@ -220,6 +240,32 @@
                     <source src="todo.mp4" type="video/mp4">
                     Your browser does not support the video tag.
                   </video>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="card" onclick="openEventPopup()">
+            <img src="calendar-event.png" alt="algorithms">
+            <div class="card-content">
+              <h3>Events' scheduler</h3>
+              
+            </div>
+       
+          </div>
+        </div>
+        <div class="popup" id="popupevent">
+          <div class="popup-content">
+            <span class="close" onclick="closeEventPopup()">&times;</span>
+        <h1>Events' scheduler</h1>
+            <p>• A program that allows the user to log in (sign up if he/she hasn't an account), add, 
+              delete, update an event and display all events sorted by start date and also by 
+              reminder time. Also, The application should refuse to add an event that intersects 
+              with another event and when an event is done it should disappear from the 
+              upcoming events, and added in another data structure holding only the done 
+              events.
+              <br>
+              <br>•Used tools: QT for GUI, C++ and the data stored in files.
+                  </p>
+                  
           </div>
         </div>
        <img src="right-arrow.png" class="arrows next">
