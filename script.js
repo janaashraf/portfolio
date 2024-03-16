@@ -43,8 +43,10 @@ function openMarioPopup() {
     document.getElementById("popup").style.display = "block";
   }
   
+ const video = document.getElementById('sm');
   function closeMarioPopup() {
     document.getElementById("popup").style.display = "none";
+    video.pause();
   }
   
   function openTodoPopup() {
