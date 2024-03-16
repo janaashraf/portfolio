@@ -61,6 +61,46 @@ function openMarioPopup() {
   function closeOsPopup() {
     document.getElementById("popupos").style.display = "none";
   }
+  function openOnPopup() {
+    document.getElementById("popupon").style.display = "block";
+  }
+  
+  function closeOnPopup() {
+    document.getElementById("popupon").style.display = "none";
+  }
+  function openEventPopup() {
+    document.getElementById("popupevent").style.display = "block";
+  }
+  
+  function closeEventPopup() {
+    document.getElementById("popupevent").style.display = "none";
+  }
+
+
+
+// Function to open the lightbox
+function openLightbox(imageSrc) {
+    document.getElementById('lightbox-img').src = imageSrc;
+    document.getElementById('lightbox').style.display = 'block';
+    document.body.style.overflow = 'hidden'; // Disable scrolling when lightbox is open
+  }
+  
+  // Function to close the lightbox
+  function closeLightbox() {
+    document.getElementById('lightbox').style.display = 'none';
+    document.body.style.overflow = 'auto'; // Enable scrolling when lightbox is closed
+  }
+  
+  // Attach click event listeners to each photo to open the lightbox
+  document.addEventListener('DOMContentLoaded', function() {
+    const photos = document.querySelectorAll('.grid-item img');
+    photos.forEach(photo => {
+      photo.addEventListener('click', function() {
+        openLightbox(this.src);
+      });
+    });
+  });
+  
   
   
   
